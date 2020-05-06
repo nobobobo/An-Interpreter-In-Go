@@ -1,16 +1,15 @@
-// lexer/lexer_test.go
-
 package lexer
 
 import (
 	"testing"
-	"token"
+
+	"monkey/token"
 )
 
-func TextNextToken(t *testing.T) {
+func TestNextToken(t *testing.T) {
 	input := `=+(){},;`
 
-	tests := struct {
+	tests := []struct {
 		expectedType    token.TokenType
 		expectedLiteral string
 	}{

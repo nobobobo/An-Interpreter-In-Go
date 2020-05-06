@@ -1,5 +1,3 @@
-// token/token.go
-
 package token
 
 type TokenType string
@@ -13,15 +11,11 @@ const (
 	ILLEGAL = "ILLEGAL"
 	EOF     = "EOF"
 
-	// identifier + literal
-	IDENT = "IDENT"
-	INT   = "INT"
-
-	// operators
+	IDENT  = "IDENT"
+	INT    = "INT"
 	ASSIGN = "="
 	PLUS   = "+"
 
-	// delimiters
 	COMMA     = ","
 	SEMICOLON = ";"
 
@@ -30,7 +24,6 @@ const (
 	LBRACE = "{"
 	RBRACE = "}"
 
-	// keywords
 	FUNCTION = "FUNCTION"
 	LET      = "LET"
 )
